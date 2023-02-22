@@ -1,2 +1,1 @@
 # momentum
-# task of rsschool
