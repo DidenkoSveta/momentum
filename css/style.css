@@ -3,9 +3,32 @@
   margin: 0;
   padding: 0;
 }
+input {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+input, label:-webkit-autofill, input:-webkit-autofill:focus, input:-webkit-autofill:hover {
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: #FAFAFA;
+}
+
+input, label:autofill, input:autofill:focus, input:autofill:hover {
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  -o-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: #FAFAFA;
+}
+input {
+  border: 1px solid #FAFAFA;
+  background: #F1F0F0;
+  border-radius: 10px;
+}
 
 body {
-  font-family: 'Anonymous Pro', monospace;
+  font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   display: flex;
   flex-direction: column;
@@ -25,18 +48,18 @@ body {
 }
 
 .time {
-  font-size: 7rem;
+  font-size: 7em;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 
 .day {
-  font-size: 4rem;
+  font-size: 3em;
 }
 
 .weekday {
-  font-size: 2.5rem;
+  font-size: 2em;
 }
 
 .greeting,
@@ -83,7 +106,7 @@ body {
   border-radius: 1vh;
   outline: none;
   color: white;
-  font-family: 'Anonymous Pro', monospace;
+  font-family: 'Montserrat', sans-serif;
   text-shadow: 1px 1px 4px rgb(31, 23, 17), 1px 1px 7px #5f462d;
   cursor: pointer;
 }
@@ -96,7 +119,7 @@ body {
   border-radius: 1vh;
   outline: none;
   color: white;
-  font-family: 'Anonymous Pro', monospace;
+  font-family: 'Montserrat', sans-serif;
   text-shadow: 1px 1px 4px rgb(31, 23, 17), 1px 1px 7px #5f462d;
   cursor: pointer;
 }
@@ -109,14 +132,14 @@ body {
 .name_input::-webkit-input-placeholder {
   color: red;
   font-size: 1.3rem;
-  font-family: 'Anonymous Pro', monospace;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
 
 .name_input::-moz-placeholder {
   color: red;
   font-size: 1.3rem;
-  font-family: 'Anonymous Pro', monospace;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
 
@@ -124,7 +147,7 @@ body {
 .name_input:-moz-placeholder {
   color: red;
   font-size: 1.3rem;
-  font-family: 'Anonymous Pro', monospace;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
 
@@ -132,21 +155,21 @@ body {
 .name_input:-ms-input-placeholder {
   color: red;
   font-size: 1.3rem;
-  font-family: 'Anonymous Pro', monospace;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
 
 .focus_input::-webkit-input-placeholder {
   color: red;
   font-size: 1.5rem;
-  font-family: 'Anonymous Pro', monospace;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
 
 .focus_input::-moz-placeholder {
   color: red;
   font-size: 1.5rem;
-  font-family: 'Anonymous Pro', monospace;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
 
@@ -154,7 +177,7 @@ body {
 .focus_input:-moz-placeholder {
   color: red;
   font-size: 1.5rem;
-  font-family: 'Anonymous Pro', monospace;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
 
@@ -162,21 +185,21 @@ body {
 .focus_input:-ms-input-placeholder {
   color: red;
   font-size: 1.5rem;
-  font-family: 'Anonymous Pro', monospace;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
 
 .city_input::-webkit-input-placeholder {
   color: red;
   font-size: 0.8rem;
-  font-family: 'Anonymous Pro', monospace;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
 
 .city_input::-moz-placeholder {
   color: red;
   font-size: 0.8rem;
-  font-family: 'Anonymous Pro', monospace;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
 
@@ -184,7 +207,7 @@ body {
 .city_input:-moz-placeholder {
   color: red;
   font-size: 0.8rem;
-  font-family: 'Anonymous Pro', monospace;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
 
@@ -192,7 +215,7 @@ body {
 .city_input:-ms-input-placeholder {
   color: red;
   font-size: 0.8rem;
-  font-family: 'Anonymous Pro', monospace;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
 
@@ -295,7 +318,7 @@ body {
 }
 
 .quote-wrap {
-  padding: 2vh;
+  padding: 10vh;
   padding-top: 0.5vh;
   align-items: center;
   color: #ffffff;
