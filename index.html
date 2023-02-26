@@ -1,54 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="assets/favicon.ico" rel="shortcut icon" />
-  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/owfont-regular.css">
   <title>momentum</title>
 </head>
+
 <body>
-  <header class="header">
-    <div class="player">
-      <div class="player-controls">
-        <button class="play-prev player-icon"></button>
-        <button class="play player-icon"></button>
-        <button class="play-next player-icon"></button>
-      </div>
-      <ul class="play-list"></ul>
-    </div>
-    <div class="weather">
-      <input type="text" class="city" />
+
+  <div class="wrap-additions">
+    <div class="weather-wrap">
+      <label class="city_label">
+        <input class="city_input" type="text" placeholder="Ваш город">
+        <p class="city_text city hidden"></p>
+      </label>
+      <br>
       <i class="weather-icon owf"></i>
-      <div class="weather-error"></div>
-      <div class="description-container">
-        <span class="temperature"></span>
-        <span class="weather-description"></span>
-      </div>
+      <div class="temperature"></div>
       <div class="wind"></div>
       <div class="humidity"></div>
+      <div class="weather-description"></div>
     </div>
-  </header>
-  <main class="main">
-    <div class="slider-icons">
-      <button class="slide-prev slider-icon"></button>
-      <button class="slide-next slider-icon"></button>
-    </div>
+
+    <button class="bg-reload" title="новый фон" type="button"></button>
+  </div>
+
+  <div class="wrap">
+    <time class="day"></time>
+    <br>
+    <time class="weekday"></time>
+    <br>
     <time class="time"></time>
-    <date class="date"></date>
-    <div class="greeting-container">
+    <br>
+    <label class="name_label">
       <span class="greeting"></span>
-      <input type="text" class="name" />
-    </div>
-  </main>
-  <footer class="footer">
-    <button class="change-quote"></button>
-    <div>
-      <div class="quote"></div>
-      <div class="author"></div>
-    </div>
-  </footer>
-  <script src="js/script.js"></script>
+      <input class="name_input" type="text" placeholder="Введите имя">
+      <span class="name_text hidden"> вася</span>
+    </label>
+    <label class="focus_label">
+      <span class="focus_intro">Сегодня обязательно нужно:</span>
+      <br>
+      <input class="focus_input" type="text" placeholder="Введите дело">
+      <span class="focus_text hidden"> вася</span>
+    </label>
+  </div>
+  <div class="quote-wrap">
+    <button class="btn-quote" title="новая подсказка" width='25'></button>
+    <p class="quote">
+
+    </p>
+  </div>
+
+
+  <script src="script.js"></script>
 </body>
+
 </html>
