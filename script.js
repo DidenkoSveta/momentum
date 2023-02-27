@@ -1,3 +1,7 @@
+// alert(
+//   "Привет!\nМне нужен еще один день, чтобы доделать этот проект.\nБуду очень признательна, если проверишь мою работу позже!\nСпасибо :) "
+// );
+
 const time = document.querySelector('.time')
 const day = document.querySelector('.day')
 const weekday = document.querySelector('.weekday')
@@ -307,17 +311,17 @@ function setBg() {
 }
 
 function changeBgr() {
-  if(isChangeBgAble){
-   isChangeBgAble = false
-   console.log(isChangeBgAble)
-   const img = document.createElement('img')
-   let numberBgImg = Math.floor(Math.random() * 24 + 1)
-   const src = `https://raw.githubusercontent.com/DidenkoSveta/momentum/images/${numberBgImg}.jpg`
-   img.src = src
-   img.onload = () => {
-     document.body.style.backgroundImage = `url(${src})`
-     setTimeout(()=>isChangeBgAble=true, 700)
-   }
+  if (isChangeBgAble) {
+    isChangeBgAble = false
+    console.log(isChangeBgAble)
+    const img = document.createElement('img')
+    let numberBgImg = Math.floor(Math.random() * 24 + 1)
+    const src = `https://raw.githubusercontent.com/DidenkoSveta/momentum/images/afternoon/${numberBgImg}.jpg`
+    img.src = src
+    img.onload = () => {
+      document.body.style.backgroundImage = `url(${src})`
+      setTimeout(() => isChangeBgAble = true, 700)
+    }
   }
 }
 async function getQuote() {
@@ -330,6 +334,7 @@ async function getQuote() {
 
 
 setBg()
+
 
 async function getWeather() {
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city.textContent}&lang=ru&appid=08f2a575dda978b9c539199e54df03b0&units=metric`
@@ -352,6 +357,7 @@ async function getWeather() {
     }
   }
 }
+
 
 
 
@@ -382,3 +388,4 @@ focusInput.addEventListener('keypress', setFocus)
 focusInput.addEventListener('blur', blurFocus)
 focusInput.addEventListener('click', clearFocus)
 focusText.addEventListener('click', newFocus)
+
