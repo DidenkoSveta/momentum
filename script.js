@@ -245,7 +245,7 @@ function getFocus() {
 
 function getName() {
   if (localStorage.getItem('name') === null || localStorage.getItem('name') === '') {
-    console.log('я туточки getName')
+    console.log('я здесь getName')
     nameText.classList.add('hidden')
     nameInput.classList.remove('hidden')
     nameInput.setAttribute('placeholder', 'Введите имя')
@@ -359,16 +359,13 @@ async function getWeather() {
 }
 
 
-
-
 showTime()
 setGreet()
-setBg()
 getName()
 getFocus()
 getQuote()
 getCity()
-
+getWeather()
 
 
 

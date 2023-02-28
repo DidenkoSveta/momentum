@@ -370,9 +370,12 @@ main {
     margin: 0 auto;
     min-height: 150px;
   }
-  weather-icon {
-    font-size: 44px;
+  .weather-icon {
+    font-size: 94px;
+    height: 200px;
+    display: block;
   }
+  
   
   .time_block {
     width: 10vh;

@@ -10,66 +10,67 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="css/owfont-regular.css" />
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/owfont-regular.css">
+
   <title>Momentum</title>
 </head>
 
 <body>
 
-<main>
-  <div class="wrap-additions">
-    <div class="weather-wrap">
-      <label class="city_label">
-        <input class="city_input" type="text" placeholder="Минск">
-        <p class="city_text city hidden"></p>
-      </label>
-      <br>
-      <i class="weather-icon owf"></i>
-      <div class="temperature"></div>
-      <div class="wind"></div>
-      <div class="humidity"></div>
-      <div class="weather-description"></div>
+  <main>
+    <div class="wrap-additions">
+      <div class="weather-wrap">
+        <label class="city_label">
+          <input class="city_input" type="text" placeholder="Минск">
+          <p class="city_text city hidden"></p>
+        </label>
+        <br>
+        <i class="weather-icon owf"></i>
+        <div class="temperature"></div>
+        <div class="wind"></div>
+        <div class="humidity"></div>
+        <div class="weather-description"></div>
+      </div>
+
+      <button class="bg-reload" title="новый фон" type="button"></button>
     </div>
 
-    <button class="bg-reload" title="новый фон" type="button"></button>
-  </div>
-
-  <div class="wrap">
-    <time class="time"></time>
-    <br>
-    <time class="day"></time>
-    <p>,</p>
-    <time class="weekday"></time>
-    <br>
-
-    <label class="name_label">
-      <span class="greeting"></span>
-      <input class="name_input" type="text" placeholder="Введите имя">
-      <span class="name_text hidden"> Имя</span>
-    </label>
-    <label class="focus_label">
-      <span class="focus_intro"></span>
+    <div class="wrap">
+      <time class="time"></time>
       <br>
-      <input class="focus_input" type="text" placeholder="Напишите пожелание">
-      <span class="focus_text hidden"></span>
-    </label>
-  </div>
-  <div class="quote-wrap">
-    <button class="btn-quote" title="новая подсказка"></button>
-    <p class="quote">
+      <time class="day"></time>
+      <p>,</p>
+      <time class="weekday"></time>
+      <br>
 
-    </p>
-  </div>
-</main>
+      <label class="name_label">
+        <span class="greeting"></span>
+        <input class="name_input" type="text" placeholder="Введите имя">
+        <span class="name_text hidden"> Имя</span>
+      </label>
+      <label class="focus_label">
+        <span class="focus_intro"></span>
+        <br>
+        <input class="focus_input" type="text" placeholder="Напишите пожелание">
+        <span class="focus_text hidden"></span>
+      </label>
+    </div>
+    <div class="quote-wrap">
+      <button class="btn-quote" title="новая подсказка"></button>
+      <p class="quote">
 
-<footer>
-<div class="footer__block">
-  <a href="https://github.com/DidenkoSveta"><img src="images/github.svg" alt="github"></a>
-<p>2023</p>
-<a href="https://rs.school/js/"><img src="images/rs-school.svg" alt="rs-school"></a>
-</div>
-</footer>
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer__block">
+      <a href="https://github.com/DidenkoSveta"><img src="images/github.svg" alt="github"></a>
+      <p>2023</p>
+      <a href="https://rs.school/js/"><img src="images/rs-school.svg" alt="rs-school"></a>
+    </div>
+  </footer>
   <script src="script.js"></script>
 </body>
 
