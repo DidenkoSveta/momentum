@@ -310,20 +310,20 @@ function setBg() {
   document.body.style.backgroundImage = `url(${bgrArr[hour]})`
 }
 
-function changeBgr() {
-  if (isChangeBgAble) {
-    isChangeBgAble = false
-    console.log(isChangeBgAble)
-    const img = document.createElement('img')
-    let numberBgImg = Math.floor(Math.random() * 24 + 1)
-    const src = `https://raw.githubusercontent.com/DidenkoSveta/momentum/images/afternoon/${numberBgImg}.jpg`
-    img.src = src
-    img.onload = () => {
-      document.body.style.backgroundImage = `url(${src})`
-      setTimeout(() => isChangeBgAble = true, 700)
-    }
-  }
-}
+// function changeBgr() {
+//   if (isChangeBgAble) {
+//     isChangeBgAble = false
+//     console.log(isChangeBgAble)
+//     const img = document.createElement('img')
+//     let numberBgImg = Math.floor(Math.random() * 24 + 1)
+//     const src = `https://raw.githubusercontent.com/DidenkoSveta/momentum/images/afternoon/${numberBgImg}.jpg`
+//     img.src = src
+//     img.onload = () => {
+//       document.body.style.backgroundImage = `url(${src})`
+//       setTimeout(() => isChangeBgAble = true, 700)
+//     }
+//   }
+// }
 async function getQuote() {
   const url = `quote.json`
   const res = await fetch(url)
@@ -370,7 +370,7 @@ getWeather()
 
 
 
-bgReload.addEventListener('click', changeBgr)
+// bgReload.addEventListener('click', changeBgr)
 btnQuote.addEventListener('click', getQuote)
 document.addEventListener('DOMContentLoaded', getWeather)
 nameInput.addEventListener('keypress', setName)
